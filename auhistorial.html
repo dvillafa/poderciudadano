@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Asesorías</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/usuario_cliente/estilosAuhistorial.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="home2.html">
+                <img src="images/Poder_Ciudadano_LOGO_Final_x.png" alt="Logo Poder Ciudadano" class="logo" width="75">
+                <h1 id="brand-name">Poder Ciudadano</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <button class="btn btn-danger profile-button">
+                    <span>Ciudadano PC</span>
+                    <img src="images/iconoperfil.png" alt="Perfil" class="profile-img">
+                    <span class="dropdown-icon">▼</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="dashboard">
+        <div class="dashboard-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <img src="images/iconoperfil.png" alt="Perfil" class="user-img">
+                <h3>Ciudadano PC</h3>
+                <a class="btn btn-light w-100" href="ausolicitar.html">Solicitar Asesoría</a>
+                <a class="btn btn-light w-100" href="auhistorial.html">Historial Asesorías</a>
+                <a class="btn btn-light w-100" href="auseguimiento.html">Seguimiento Asesoría</a>
+                <a class="btn btn-warning w-100">Editar Perfil</a>
+                <a class="btn btn-danger w-100" href="index.html">Cerrar Sesión</a>
+            </div>
+
+            <!-- Historial Section -->
+            <div class="historial-wrapper">
+                <h2>Historial de Asesorías</h2>
+                <div class="empty-state">
+                    <img src="images/icomoon-free_files-empty.png" alt="No data" class="empty-icon">
+                    <p class="empty-message">Vacío</p>
+                    <button class="btn btn-primary">Recargar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
