@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Login Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EAEAEA;
+    color: #070707;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Hidden Placeholder Card */
+.hidden-card {
+    width: 20%;
+    visibility: hidden;
+}
+
+/* Information Card */
+.info-card {
+    width: 25%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Login Card */
+.login-card {
+    width: 30%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.login-card label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-card button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c0392b;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background-color: #a83227;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-login .icons a {
+    margin: 0 10px;
+}
+
+.social-login .icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Outside Image */
+.outside-image {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 34%;
+    border-radius: 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-buttons .btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.auth-buttons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.auth-buttons .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.auth-buttons .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Centrar el enlace de "¿Olvidaste Contraseña?" */
+.forgot-password {
+    display: block;
+    margin: 15px auto 0;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Ícono al lado del texto */
+.info-card .info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-card {
+    width: 25%;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: left;
+    /* Cambia de 'center' a 'left' */
+}
+
+.info-card .info-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-icon img {
+    width: 170px;
+    height: 170px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+    .main-section {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .info-card,
+    .login-card {
+        width: 40%;
+    }
+
+    .outside-image {
+        width: 30%;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .outside-image {
+        display: none;
+        /* Hide the image on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .info-card,
+    .login-card {
+        width: 80%;
+    }
+
+    .outside-image {
+        display: none;
+        /* Hide the image on smaller screens */
+    }
+
+    .info-card {
+        display: none;
+        /* Hide the image on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .info-card,
+    .login-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .info-card h2,
+    .login-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-card p,
+    .login-card label {
+        font-size: 0.9rem;
+    }
+}

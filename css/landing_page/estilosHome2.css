@@ -1,0 +1,1173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.profile-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-button .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button .btn:hover {
+    background-color: #a32b22;
+}
+
+.profile-button .profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-button .dropdown-icon {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Hero Card */
+.hero-card {
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px 43px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #C0392B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #c9682c;
+}
+
+/* Badges */
+.badges {
+    display: flex;
+    /* Alinea en fila automáticamente */
+    gap: 20px;
+    /* Espacio uniforme entre badges */
+    margin-top: 20px;
+    /* Separación del resto del contenido */
+    align-items: center;
+    /* Centra verticalmente las imágenes */
+    justify-content: flex-start;
+    /* Cambiar a 'center' para centrar horizontalmente */
+    flex-wrap: nowrap;
+    /* Evita que las badges salten a una nueva fila */
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    /* Imagen y texto en columna */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.badge img {
+    width: 300px;
+    /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    /* Mantén la proporción */
+}
+
+.badge p {
+    font-size: 14px;
+    /* Tamaño del texto */
+    color: #333;
+}
+
+/* Image Content */
+.image-content img {
+    border-radius: 20px;
+    width: 600px;
+    height: 786px;
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen en el contenedor */
+}
+
+
+.guarantee-box {
+    position: absolute;
+    top: 385px;
+    right: 500px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 271px;
+}
+
+.guarantee-box img {
+    width: 100%;
+    max-width: 200px;
+    /* Tamaño máximo para la imagen */
+    height: auto;
+    /* Mantiene las proporciones */
+    display: block;
+    margin: 10px auto;
+    /* Centra la imagen dentro de su contenedor */
+}
+
+.featured-services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featured-services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    flex-wrap: wrap;
+    padding-left: 111px;
+    /* Espacio en el lado izquierdo */
+    padding-right: 111px;
+}
+
+.service-card {
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.icon-container img {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+    background-color: #1a252f;
+}
+
+.about-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Columna izquierda */
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.secondary-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.objective-card {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.objective-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.objective-card img {
+    width: 50px;
+    margin: 10px auto;
+}
+
+.objective-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.secondary-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Columna derecha */
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    background-color: #F1A208;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a93226;
+}
+
+.why-grid {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos salten a una nueva fila si es necesario */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    padding-left: 48px;
+    /* Espacio en el lado izquierdo */
+    padding-right: 48px;
+}
+
+.why-item img {
+    width: 100%;
+    /* Tamaño fijo de la imagen */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-bottom: 15px;
+
+}
+
+.how-we-help {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    padding-left: 58px;
+    padding-right: 58px;
+}
+
+.how-we-help h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    gap: 20px;
+    /* Espaciado entre las tarjetas */
+    justify-content: center;
+    align-items: start;
+}
+
+.help-item {
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    /* Alinea contenido en fila dentro de la tarjeta */
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.help-item:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom al pasar el cursor */
+}
+
+.help-item img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.help-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.help-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 150px;
+}
+
+.help-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.help-link span {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.help-link a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.help-link a:hover {
+    color: #ff5733;
+}
+
+.how-we-help-text {
+    flex: 1;
+    text-align: center
+}
+
+.how-we-help-text h2 {
+    background-color: #C0392B;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.how-we-help-text h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.how-we-help-text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.FAQ-grid {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos salten a una nueva fila si es necesario */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    padding-left: 48px;
+    /* Espacio en el lado izquierdo */
+    padding-right: 48px;
+}
+
+.FAQ-item img {
+    width: 100%;
+    /* Tamaño fijo de la imagen */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-bottom: 15px;
+
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos salten a una nueva fila si es necesario */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    padding-left: 48px;
+    /* Espacio en el lado izquierdo */
+    padding-right: 48px;
+}
+
+.testimonials-item img {
+    width: 100%;
+    /* Tamaño fijo de la imagen */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-bottom: 15px;
+
+}
+
+
+.latest-news-grid {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos salten a una nueva fila si es necesario */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    padding-left: 38px;
+    /* Espacio en el lado izquierdo */
+    padding-right: 38px;
+}
+
+.latest-news-item img {
+    width: 100%;
+    /* Tamaño fijo de la imagen */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-bottom: 15px;
+
+}
+
+/* Banner */
+.banner {
+    padding: 40px;
+    /* Espaciado alrededor del banner */
+    background-color: transparent;
+    /* Fondo transparente para la sección */
+    display: flex;
+    /* Usamos flexbox para la disposición */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.banner-content {
+    background-color: #333333;
+    /* Color de fondo negro para la tarjeta */
+    color: #fff;
+    /* Color del texto blanco */
+    display: flex;
+    /* Usamos flexbox para la disposición interna */
+    flex-direction: row;
+    /* Alinea los elementos en fila */
+    justify-content: space-between;
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    padding: 63px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra para la tarjeta */
+    max-width: 1700px;
+    /* Ancho máximo de la tarjeta */
+    width: 100%;
+    /* Ancho completo en pantallas pequeñas */
+}
+
+.text-contentbanner {
+    max-width: 600px;
+    /* Ancho máximo para el texto */
+    margin-right: 20px;
+    /* Espacio entre el texto y la imagen */
+}
+
+.text-contentbanner h1 {
+    font-size: 2.5rem;
+    /* Tamaño de fuente grande */
+    line-height: 1.2;
+    /* Espaciado entre líneas */
+}
+
+.text-contentbanner p {
+    font-size: 1.2rem;
+    /* Tamaño de fuente del párrafo */
+    margin-bottom: 20px;
+    /* Espacio debajo del párrafo */
+}
+
+.cta-buttonbanner {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F1A208;
+    /* Color del botón */
+    color: white;
+    /* Color del texto del botón */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border-radius: 5px;
+    /* Bordes redondeados del botón */
+    font-size: 16px;
+    /* Tamaño de fuente del botón */
+    font-weight: bold;
+    /* Negrita */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.cta-buttonbanner:hover {
+    background-color: #f1bb08;
+    /* Color del botón al pasar el cursor */
+}
+
+/* Imagen del banner */
+.image-contentbanner img {
+    width: 100%;
+    /* Asegura que la imagen ocupe el 100% del contenedor */
+    max-width: 500px;
+    /* Tamaño máximo para la imagen */
+    height: auto;
+    /* Mantiene la proporción */
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    padding: 50px 20px;
+    /* Espaciado interno */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    margin: 50px auto;
+    /* Centra la sección */
+    max-width: 1300px;
+    /* Ancho máximo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Contenedor del contenido */
+.contact-container {
+    display: flex;
+    /* Flexbox para alinear imagen y formulario */
+    justify-content: space-between;
+    /* Espacio entre ambos lados */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que se ajuste en pantallas pequeñas */
+    gap: 20px;
+    /* Espaciado entre elementos */
+}
+
+/* Texto y Badge */
+.contact-text {
+    flex: 1;
+    /* Ocupa el mismo espacio que el formulario */
+    max-width: 500px;
+    /* Ancho máximo */
+}
+
+.contact-text .badge {
+    background-color: #00c4cc;
+    /* Color del badge */
+    color: white;
+    /* Texto blanco */
+    padding: 5px 15px;
+    /* Espaciado interno */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    display: inline-block;
+    /* Inline para adaptarse al contenido */
+    font-size: 14px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Negrita */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    margin-bottom: 10px;
+    /* Espaciado debajo del badge */
+}
+
+.contact-text h2 {
+    font-size: 2rem;
+    /* Tamaño del título */
+    font-weight: bold;
+    /* Negrita */
+    margin-bottom: 20px;
+    /* Espaciado debajo del título */
+    color: #333;
+    /* Color del texto */
+}
+
+.contact-text img {
+    width: 100%;
+    /* Imagen ocupa el ancho completo */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+/* Formulario */
+form {
+    flex: 1;
+    /* Ocupa el mismo espacio que el texto */
+    max-width: 500px;
+    /* Ancho máximo */
+    display: flex;
+    /* Flexbox para organizar los campos */
+    flex-direction: column;
+    /* Campos en columna */
+    gap: 15px;
+    /* Espaciado entre campos */
+}
+
+/* Campos del formulario */
+form label {
+    font-size: 1rem;
+    /* Tamaño del texto */
+    color: #333;
+    /* Color del texto */
+    font-weight: bold;
+    /* Negrita */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    border: 1px solid #ccc;
+    /* Borde claro */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    outline: none;
+    /* Sin borde adicional al hacer foco */
+    transition: border-color 0.3s ease;
+    /* Transición suave */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00796b;
+    /* Cambia color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+    /* Sombra en foco */
+}
+
+form textarea {
+    min-height: 120px;
+    /* Altura mínima para el campo de texto */
+    resize: none;
+    /* Elimina opción de redimensionar */
+}
+
+/* Botón */
+form button {
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 15px;
+    /* Espaciado interno */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Texto en negrita */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a pointer */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+form button:hover {
+    background-color: #333;
+    /* Color más oscuro al pasar el cursor */
+}
+
+form button:active {
+    background-color: #555;
+    /* Color aún más oscuro al presionar */
+}
+
+.footer {
+    background-color: #333333;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 40px 20px;
+    /* Espaciado interno */
+}
+
+.footer-container {
+    display: flex;
+    /* Flexbox para organizar las secciones */
+    justify-content: space-between;
+    /* Espacio entre cada columna */
+    flex-wrap: wrap;
+    /* Permite que las columnas se ajusten en pantallas pequeñas */
+    gap: 20px;
+    /* Espaciado entre columnas */
+    max-width: 1200px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrado horizontal */
+}
+
+/* Logo y descripción */
+.footer-logo h2 {
+    font-size: 1.5rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Negrita */
+    color: #ffffff;
+    /* Texto blanco */
+    margin-bottom: 10px;
+    /* Espaciado debajo del título */
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    /* Tamaño del texto */
+    color: #cccccc;
+    /* Texto gris claro */
+    margin-bottom: 20px;
+    /* Espaciado debajo del párrafo */
+}
+
+.footer-button {
+    display: inline-block;
+    /* Botón en línea */
+    background-color: #4a90e2;
+    /* Fondo azul */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Texto en negrita */
+    text-decoration: none;
+    /* Sin subrayado */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.footer-button:hover {
+    background-color: #357ab7;
+    /* Azul más oscuro en hover */
+}
+
+/* Columnas */
+.footer-links,
+.footer-services,
+.footer-contact {
+    flex: 1;
+    /* Cada columna ocupa el mismo espacio */
+    max-width: 250px;
+    /* Ancho máximo por columna */
+}
+
+.footer-links h3,
+.footer-services h3,
+.footer-contact h3 {
+    font-size: 1.2rem;
+    /* Tamaño del texto del título */
+    color: #add8e6;
+    /* Azul claro */
+    margin-bottom: 15px;
+    /* Espaciado debajo del título */
+}
+
+/* Listas */
+.footer-links ul,
+.footer-services ul,
+.footer-contact ul {
+    list-style: none;
+    /* Sin viñetas */
+    padding: 0;
+    /* Sin relleno interno */
+    margin: 0;
+    /* Sin márgenes */
+}
+
+.footer-links ul li,
+.footer-services ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
+    /* Espaciado entre elementos */
+    font-size: 1rem;
+    /* Tamaño del texto */
+}
+
+.footer-links ul li a,
+.footer-services ul li a {
+    color: #ffffff;
+    /* Enlaces en blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    transition: color 0.3s ease;
+    /* Transición suave */
+}
+
+.footer-links ul li a:hover,
+.footer-services ul li a:hover {
+    color: #add8e6;
+    /* Azul claro en hover */
+}
+
+/* Contacto */
+.footer-contact ul li a {
+    color: #add8e6;
+    /* Azul claro */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+.footer-contact ul li a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el cursor */
+}
+
+@media (min-width: 1066px) and (max-width: 1386px) {
+    .text-content {
+        max-width: 910%;
+        /* Ajusta el ancho del texto */
+        margin-bottom: 20px;
+        /* Agrega espacio entre texto y contenido visual */
+    }
+
+    .image-content {
+        max-width: 80%;
+        /* Reduce el ancho del contenedor de la imagen */
+        margin: 0 auto;
+        /* Centra el contenedor */
+    }
+
+    .image-content img {
+        width: 100%;
+        /* Asegura que la imagen se adapte al ancho del contenedor */
+        margin-bottom: 20px;
+        /* Espacio entre la mujer morena y la imagen de garantía */
+    }
+
+    .guarantee-box {
+        display: none;
+        /* Centra la imagen de atención garantizada */
+    }
+}
+
+/* Estilos para pantallas medianas (tablets, 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1066px) {
+    .text-content {
+        max-width: 90%;
+        /* Ajusta el ancho del texto */
+        margin-bottom: 20px;
+        /* Agrega espacio entre texto y contenido visual */
+    }
+
+    .image-content {
+        max-width: 80%;
+        /* Reduce el ancho del contenedor de la imagen */
+        margin: 0 auto;
+        /* Centra el contenedor */
+    }
+
+    .image-content img {
+        width: 100%;
+        /* Asegura que la imagen se adapte al ancho del contenedor */
+        margin-bottom: 20px;
+        /* Espacio entre la mujer morena y la imagen de garantía */
+    }
+
+    .guarantee-box img {
+        display: none;
+        /* Mantiene la proporción de la imagen */
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+        /* 1 columna en pantallas pequeñas */
+    }
+
+    .help-item {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .help-item img {
+        margin-bottom: 15px;
+    }
+
+    .help-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .badges {
+        flex-wrap: wrap;
+        /* Permite que las badges pasen a una nueva línea si es necesario */
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
+        gap: 10px;
+        /* Reduce el espacio entre las badges */
+    }
+
+    .badge img {
+        max-width: 100%;
+        /* Asegura que las imágenes no excedan el ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción de las imágenes */
+    }
+
+    .badge p {
+        font-size: 12px;
+        /* Texto más pequeño para dispositivos pequeños */
+        text-align: center;
+        /* Centra el texto debajo de las imágenes */
+    }
+
+    .hero-section {
+        padding: 10px;
+        /* Reduce el espacio interno para ajustar mejor en pantallas pequeñas */
+    }
+
+    .image-content {
+        display: none;
+    }
+
+    .guarantee-box {
+        position: static;
+        /* Elimina la posición absoluta para evitar problemas en pantallas pequeñas */
+        margin-top: 20px;
+        /* Agrega espacio entre las imágenes */
+    }
+
+    .guarantee-box img {
+        max-width: 150px;
+        /* Reduce el tamaño máximo de la imagen en pantallas pequeñas */
+    }
+
+    .image-content img {
+        max-width: 200px;
+        /* Ajusta el tamaño máximo de la mujer morena en pantallas pequeñas */
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+        /* 1 columna en pantallas pequeñas */
+    }
+
+    .help-item {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .help-item img {
+        margin-bottom: 15px;
+    }
+
+    .help-content {
+        text-align: center;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra el contenido */
+    }
+
+    .text-contentbanner {
+        margin-right: 0;
+        /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px;
+        /* Espacio debajo del texto */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .text-contentbanner h1 {
+        font-size: 1.8rem;
+        /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .text-contentbanner p {
+        font-size: 1rem;
+        /* Tamaño de fuente más pequeño para el párrafo */
+    }
+
+    .image-contentbanner img {
+        max-width: 100%;
+        /* Asegura que la imagen no exceda el ancho del contenedor */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .contact-text h2 {
+        font-size: 1.8rem;
+        /* Reduce el tamaño del título */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .contact-text img {
+        margin-bottom: 20px;
+        /* Espaciado debajo de la imagen */
+    }
+
+}

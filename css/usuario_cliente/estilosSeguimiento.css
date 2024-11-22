@@ -1,0 +1,173 @@
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #a32b22;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-icon {
+    font-size: 0.8rem;
+}
+
+/* Dashboard */
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar .btn {
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+/* Historial Section */
+.historial-wrapper {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px;
+}
+
+.historial-wrapper h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.empty-icon {
+    width: 180px;
+    height: 180px;
+    opacity: 0.5;
+}
+
+.empty-message {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* RESPONSIVENESS */
+
+/* Pantallas medianas */
+@media screen and (max-width: 1024px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .historial-wrapper {
+        width: 100%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 80%;
+    }
+
+    .historial-wrapper {
+        width: 100%;
+    }
+
+    .profile-button {
+        padding: 8px 15px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    .navbar .profile-button {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .historial-wrapper {
+        padding: 20px;
+    }
+
+    .empty-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .empty-message {
+        font-size: 1rem;
+    }
+}

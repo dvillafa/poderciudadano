@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Login Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 100px;
+    min-height: 100vh;
+    padding: 20px;
+    padding-left: 100px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.register-button {
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-card {
+    width: 30%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.register-card label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.register-card .form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.register-card .form-row div {
+    flex: 1;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-card .form-row div {
+    display: flex;
+    flex-direction: column;
+    /* Asegura que el label y el input estén alineados verticalmente */
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Outside Image */
+.outside-image {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 54%;
+    border-radius: 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-buttons .btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.auth-buttons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.auth-buttons .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.auth-buttons .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Centrar el enlace de "¿Olvidaste Contraseña?" */
+.forgot-password {
+    display: block;
+    margin: 15px auto 0;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Ícono al lado del texto */
+.info-card .info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-card {
+    width: 25%;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: left;
+    /* Cambia de 'center' a 'left' */
+}
+
+.info-card .info-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-icon img {
+    width: 308px;
+    height: 108px;
+}
+
+.social-login .icons a {
+    margin: 0 10px;
+}
+
+.social-login .icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+    .main-section {
+        padding-left: 50px;
+        gap: 20px;
+    }
+
+    .register-card {
+        width: 40%;
+    }
+
+    .outside-image {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .register-card {
+        width: 50%;
+    }
+
+    .outside-image {
+        width: 50%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+
+    .outside-image {
+        display: none;
+        /* Ocultar imagen para pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .register-card {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .outside-image {
+        display: none;
+        /* Ocultar imagen para pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-section {
+        padding: 10px;
+    }
+
+    .register-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .register-card label {
+        font-size: 0.8rem;
+    }
+
+    .register-card input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .register-card .auth-buttons .btn {
+        font-size: 0.8rem;
+    }
+
+    .form-icon img {
+        width: 200px;
+        height: 80px;
+    }
+}
